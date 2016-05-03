@@ -6,7 +6,7 @@ $('input').css({"width":"350px", "height":"50px","border":"1px solid 	#d4d4d4","
   $('#search').click(function() {
 
     $.ajax({
-      url: 'http://www.omdbapi.com/?s=jaw',
+      url: 'http://www.omdbapi.com/?s=' + $(".movie-title").val(),
       method: 'get'
       }).done(function(movies){
 
